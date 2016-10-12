@@ -2,7 +2,7 @@
 <body>
   <div class="left">
 
-    <h2><%= @p1_name %></h2>
+    <h1><%= @p1_name %></h1>
     <div class="img"><div class="dragon"><img src="http://i.imgur.com/dmsJvpc.png" alt="dragon" height="300" width="300">
     </div>
     </div>
@@ -11,7 +11,7 @@
   <div class="center">
   </div>
   <div class="right">
-    <h2><%= @p2_name %> </h2>
+    <h1><%= @p2_name %> </h1>
     <div class="img"><div id="hydra"><img src="http://i.imgur.com/yAMeJcI.png" height="300" width="300">
     </div>
     </div>
@@ -25,15 +25,21 @@
 <style>
 
 body {
-  background-color: #4F1E0D;
+  background-color: #0D294F;
   display: flex;
   justify-content: center;
+}
+
+img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
 }
 
 
 .left {
   width: 460px;
-  background-color: #A14323;
+  background-color: #304869;
   margin: 15px;
   padding: 20px;
   float: left;
@@ -43,14 +49,14 @@ body {
 
 .center {
   width: 180px;
-  background-color: #7A3524;
+  background-color: #0D4A9C;
   margin: 5px
 }
 
 
 .right {
   width: 460px;
-  background-color: #A14323;
+  background-color: #304869;
   margin: 15px;
   padding: 20px;
   align-content: right;
