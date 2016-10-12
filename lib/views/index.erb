@@ -1,14 +1,14 @@
 <body>
     <div class="upper">
       <form action="/names" method="post">
-      <h1>Player1 name: </h1><br>
+      <h1>Player 1 name: </h1><br>
       <input type="text" name="p1_name"><br>
     </div>
     <div class="center">
       <input type="submit" value="Enter Battle!!" />
     </div>
     <div class="lower">
-      <h1>Player2 name: </h1><br>
+      <h1>Player 2 name: </h1><br>
       <input type="text" name="p2_name"><br>
     </div>
   </form>
@@ -16,21 +16,48 @@
 
 <style>
 
+
 body {
   background-color: #0D294F;
   justify-content: center;
 }
 
-/*img {
+
+img {
   border-style: solid;
   border-width: 5px;
   border-color: black;
-}*/
+  justify-content: right;
+}
+
+
+input[type="text"] {
+  width: 200px;
+  height: 40px
+}
+
+
+input[type="submit"] {
+  background-color: #091D38;
+  border: none;
+  color: white;
+  padding: 40px 80px;
+  font-size: 16px;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #2779E8;
+  transition-duration: 0.4s;
+  border: none;
+  color: white;
+  padding: 40px 80px;
+  font-size: 16px;
+}
 
 
 .upper {
-  /*width: 460px;*/
-  height: 150px;
+  height: 200px;
   background-color: #304869;
   margin: 15px;
   padding: 20px;
@@ -38,17 +65,16 @@ body {
 
 
 .center {
-  /*width: 180px;*/
   height: 100px;
   background-color: #0D4A9C;
   margin: 5px;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 
 .lower {
-  /*width: 460px;*/
-  height: 150px;
+  height: 200px;
   background-color: #304869;
   margin: 15px;
   padding: 20px;
