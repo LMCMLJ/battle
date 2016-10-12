@@ -11,9 +11,12 @@ feature 'Battle' do
   end
 
   scenario "expect names to be submitted and displayed" do
-    puts "THIS CODE RUNS!"
     expect(page).to have_text "Mike"
     expect(page).to have_text "Julio"
+  end
+
+  scenario "expect players hit points to be displayed" do
+    expect(page).to have_text "100"
   end
 
 end
