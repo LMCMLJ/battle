@@ -2,16 +2,62 @@
 <body>
   <div class="left">
 
-    <h3><%= @p1_name %></h3><br>
-    <img src="http://i.imgur.com/dmsJvpc.png">
-    <h4><%= @p1_hit_points%></h4>
-  </div>
-  <div class="right">
-    <h3><%= @p2_name %> </h3>
-    <img src="http://i.imgur.com/yAMeJcI.png">
-    <h4><%= @p2_hit_points%></h4>
+    <h2><%= @p1_name %></h2>
+    <div class="img"><div class="dragon"><img src="http://i.imgur.com/dmsJvpc.png" alt="dragon" height="300" width="300">
+    </div>
+    </div>
+    <h4>HP: <%= @p1_hit_points%></h4>
   </div>
   <div class="center">
   </div>
+  <div class="right">
+    <h2><%= @p2_name %> </h2>
+    <div class="img"><div id="hydra"><img src="http://i.imgur.com/yAMeJcI.png" height="300" width="300">
+    </div>
+    </div>
+    <h4>HP: <%= @p2_hit_points%></h4>
+  </div>
+
 
 </body>
+
+
+<style>
+
+body {
+  background-color: #4F1E0D;
+  display: flex;
+  justify-content: center;
+}
+
+
+.left {
+  width: 460px;
+  background-color: #A14323;
+  margin: 15px;
+  padding: 20px;
+  float: left;
+  text-align: left;
+}
+
+
+.center {
+  width: 180px;
+  background-color: #7A3524;
+  margin: 5px
+}
+
+
+.right {
+  width: 460px;
+  background-color: #A14323;
+  margin: 15px;
+  padding: 20px;
+  align-content: right;
+  float: right;
+  text-align: right;
+  align: right;
+}
+
+
+</style>
