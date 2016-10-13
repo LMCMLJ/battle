@@ -12,6 +12,7 @@ class Battle < Sinatra::Base
   post '/names' do
     $p1 = Player.new(params[:p1_name])
     $p2 = Player.new(params[:p2_name])
+    @game = Game.new
     redirect '/play'
   end
 
@@ -20,7 +21,7 @@ class Battle < Sinatra::Base
   end
 
   post '/attack' do
-    $p2.hp -= 10
+    @game.attack($p2)
     redirect '/finished-attack'
   end
 
