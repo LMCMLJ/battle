@@ -21,18 +21,15 @@ class Battle < Sinatra::Base
     session[:p2_hp] = 100
     @turns = 0
     erb(:play)
-    puts "this code runs"
-    p session[:p2_hp]
   end
 
   post '/attack' do
-    # session[:p2_hp] -= 10
-    redirect '/finished_attack'
-  end
-
-  get '/finished_attack' do
     erb(:attack)
   end
+
+  # get '/finished_attack' do
+  #   erb(:attack)
+  # end
 
   # start the server if ruby file executed directly
   run! if app_file == $0

@@ -16,4 +16,9 @@ feature 'Battle' do
     expect(page).to have_text "100"
   end
 
+  scenario "expect score to reduce following attack" do
+    click_button("Attack!")
+    expect(page).to have_text "90"
+  end
+
 end
