@@ -10,6 +10,9 @@
   </div>
   <div class="center">
     <h2>Prepare to fight!</h2>
+    <form action="/attack" method=post>
+      <input type="submit" value="Attack!">
+    </form>
   </div>
   <div class="right">
     <h1><%= @p2_name %> </h1>
@@ -38,6 +41,14 @@ img {
 
 h2 {
   text-align: center
+}
+
+input[type="submit"] {
+  background-color: #091D38;
+  border: none;
+  color: white;
+  padding: 40px 80px;
+  font-size: 16px;
 }
 
 
