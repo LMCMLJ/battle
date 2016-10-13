@@ -1,7 +1,6 @@
 
 <body>
   <div class="left">
-
     <h1><%= $p1.name %></h1>
     <div class="img"><div class="dragon"><img src="http://i.imgur.com/dmsJvpc.png" alt="dragon" height="300" width="300">
     </div>
@@ -12,6 +11,11 @@
     <h2>Prepare to fight!</h2>
     <form action="/attack" method=post>
       <input type="submit" value="Attack!">
+      <input type="submit" value="Attack!!">
+      <input type="submit" value="Attack!!">
+      <input type="submit" value="Attack!!">
+      <input type="submit" value="Attack!!">
+      <input type="submit" value="Attack!!">
     </form>
   </div>
   <div class="right">
@@ -32,6 +36,7 @@ body {
   justify-content: center;
 }
 
+
 img {
   border-style: solid;
   border-width: 5px;
@@ -43,12 +48,27 @@ h2 {
   text-align: center
 }
 
+
 input[type="submit"] {
   background-color: #091D38;
+  border-style: solid;
+  border-width: 2dpx;
+  border-color: black;
+  color: white;
+  height: 100px;
+  width: 180px;
+  font-size: 16px;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #2779E8;
+  transition-duration: 0.1s;
   border: none;
   color: white;
-  padding: 40px 80px;
-  font-size: 16px;
+  height: 100px;
+  width: 180px;
+  font-size: 20px;
 }
 
 
