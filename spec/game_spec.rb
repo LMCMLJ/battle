@@ -3,7 +3,7 @@ require 'game'
 describe Game do
 
   before :each do
-    @game = Game.new
+    @game = Game.new("Mike", "Kath")
     @p1 = double(:p1)
     allow(@p1).to receive(:hp).and_return(90)
     allow(@p1).to receive(:hp=).and_return(90)

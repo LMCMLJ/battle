@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/player'
+require './lib/game'
 
 class Battle < Sinatra::Base
 
@@ -10,9 +11,9 @@ class Battle < Sinatra::Base
   end
 
   post '/names' do
-    $p1 = Player.new(params[:p1_name])
-    $p2 = Player.new(params[:p2_name])
-    @game = Game.new
+    p p1 = (params[:p1_name])
+    p p2 = (params[:p2_name])
+    $game = Game.new((params[:p1_name]), params[:p2_name])
     redirect '/play'
   end
 
@@ -21,7 +22,7 @@ class Battle < Sinatra::Base
   end
 
   post '/attack' do
-    @game.attack($p2)
+    $game.attack('p2')
     redirect '/finished-attack'
   end
 
