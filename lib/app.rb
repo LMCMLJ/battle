@@ -20,11 +20,12 @@ class Battle < Sinatra::Base
   end
 
   post '/attack' do
-    $game.attack('p2')
+    $game.attack
     redirect '/finished-attack'
   end
 
   get '/finished-attack' do
+    $game.switch_turn
     erb(:attack)
   end
 

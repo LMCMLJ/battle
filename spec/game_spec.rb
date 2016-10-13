@@ -11,7 +11,7 @@ describe Game do
 
   describe '#attack' do
     it 'lowers input players hp' do
-      @game.attack(@p1)
+      @game.attack
       expect(@p1.hp).to eq(90)
     end
   end
