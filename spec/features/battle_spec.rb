@@ -7,7 +7,7 @@ feature 'Battle' do
     visit "/"
     fill_in "p1_name", :with => 'Mike'
     fill_in "p2_name", :with => 'Julio'
-    click_button 'submit'
+    click_button 'Enter Battle!!'
   end
 
   scenario "expect names to be submitted and displayed" do
@@ -16,6 +16,7 @@ feature 'Battle' do
   end
 
   scenario "expect players hit points to be displayed" do
+    visit '/play'
     expect(page).to have_text "100"
   end
 
