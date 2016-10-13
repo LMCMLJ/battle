@@ -11,7 +11,9 @@ class Battle < Sinatra::Base
   end
 
   post '/names' do
-    $game = Game.new((params[:p1_name]), params[:p2_name])
+    img = "http://i.imgur.com/dmsJvpc.png"
+    img2 = "http://i.imgur.com/yAMeJcI.png"
+    $game = Game.new(params[:p1_name], img, params[:p2_name], img2)
     redirect '/play'
   end
 
