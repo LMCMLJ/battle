@@ -4,10 +4,7 @@ require 'spec_helper'
 feature 'Battle' do
 
   before :each do
-    visit "/"
-    fill_in "p1_name", :with => 'Mike'
-    fill_in "p2_name", :with => 'Julio'
-    click_button 'Enter Battle!!'
+    sign_in_and_play
   end
 
   scenario "expect names to be submitted and displayed" do
@@ -16,7 +13,6 @@ feature 'Battle' do
   end
 
   scenario "expect players hit points to be displayed" do
-    visit '/play'
     expect(page).to have_text "100"
   end
 
