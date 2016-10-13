@@ -24,12 +24,13 @@ class Battle < Sinatra::Base
   end
 
   post '/attack' do
-    erb(:attack)
+    session[:p2_hp] -= 10
+    redirect '/finished-attack'
   end
 
-  # get '/finished_attack' do
-  #   erb(:attack)
-  # end
+  get '/finished-attack' do
+    erb(:attack)
+  end
 
   # start the server if ruby file executed directly
   run! if app_file == $0
