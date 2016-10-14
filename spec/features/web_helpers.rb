@@ -12,5 +12,6 @@ def attack_to_kill
 end
 
 def kill_player
-  19.times do attack_to_kill end
+  18.times do attack_to_kill end
+  click_button("Attack!")
 end
