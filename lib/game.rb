@@ -16,4 +16,8 @@ class Game
     @p2 = @p1
     @p1 = temp_p2
   end
+
+  def dead?
+    @p1.hp <= 0 || @p2.hp <= 0 ? true : false
+  end
 end

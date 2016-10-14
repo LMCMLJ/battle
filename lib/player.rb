@@ -8,5 +8,4 @@ attr_accessor :hp
     @name = name
     @hp = hp
   end
-
 end
