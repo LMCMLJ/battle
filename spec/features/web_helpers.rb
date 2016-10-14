@@ -5,3 +5,12 @@ def sign_in_and_play
   click_button 'Enter Battle!!'
   visit "/play"
 end
+
+def attack_to_kill
+  click_button("Attack!")
+  click_button("RETURN TO THE FIGHT!")
+end
+
+def kill_player
+  19.times do attack_to_kill end
+end

@@ -21,4 +21,9 @@ feature 'Battle' do
     expect(page).to have_text "90"
   end
 
+  scenario "expect the you lose page to be displayed at 0 hp" do
+    kill_player
+    expect(page).to have_image ("http://tinyurl.com/jv3o4kg")
+  end
+
 end
