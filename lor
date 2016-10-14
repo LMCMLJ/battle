@@ -1,5 +1,17 @@
-[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
 
-Finished in 0.2933 seconds (files took 0.79485 seconds to load)
+Battle
+[32m  expect names to be submitted and displayed[0m
+[32m  expect players hit points to be displayed[0m
+[32m  expect score to reduce following attack[0m
+[32m  expect the you lose page to be displayed at 0 hp[0m
+
+Game
+  #attack
+[32m    lowers input players hp[0m
+
+Player
+[32m  Should return a player's name[0m
+
+Finished in 0.21359 seconds (files took 0.39456 seconds to load)
 [32m6 examples, 0 failures[0m
 

@@ -23,8 +23,7 @@ feature 'Battle' do
 
   scenario "expect the you lose page to be displayed at 0 hp" do
     kill_player
-    # expect(page).to have_image ("http://tinyurl.com/jv3o4kg")
-    expect(page).to have_text('You are dead!!')
+    expect(page).to have_css('img[src*="http://tinyurl.com/jv3o4kg"]')
   end
 
 end
